@@ -1,0 +1,60 @@
+*{
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-content: center;
+}
+.color{
+    width: auto;
+    height: 20px;
+}
+.content{
+    width: 1000px;
+    height: 400px;
+}
+.content .headbar{
+    display: inline;
+    align-content: center;
+    margin: 0;
+    width: 1000;
+    height: 200;
+    color: white;
+}
+.content .headbar table tr td{
+    padding: 30px;
+}
+.content .info table{
+    width: 500px;
+    
+}
+.prob{
+    margin-left: 950px;
+    margin-top: 30px;
+}
+.in{
+    margin-left: 800px;
+    padding-top: 30px;
+}
+.content .info table td{
+    text-align: center;
+}
+.content .photo{
+    display: inline;
+}
+.content .photo img{
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    padding-right: 20px;
+}
+.content .info{
+    display: inline-block;
+    position: absolute;
+    padding: 10px;
+    margin-left: 100px;
+    padding: 20px;
+    padding-left: 0;
+}
+img{    
+    width: 300px;
+    height: 200px;
+}

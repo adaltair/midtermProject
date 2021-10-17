@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    margin-bottom: 60px ;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color:gray;
+    transition: 0.3s;
+}
+a:hover{
+    color: #fc6d40;
+}
+p{
+    color: gray;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 90px;
+    margin-left: 10px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 60%;
+    padding: 50px 0;
+    margin-left: 20%;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    font-weight: 1000;
+}
+.btn{
+    display: inline-block;
+    background: #fc6d40;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition:background 0.5s;
+    stroke: 0;
+}
+.btn:hover{
+    background: #ff4100;
+    color: white;
+}
+.header{
+    background: radial-gradient(#fff, #ffd6d6);
+}
+.col-3{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-3:hover{
+    transform: translateY(-10px);
+}
+.col-3 img{
+    width: 50%;
+}
+.title{
+    text-align: center;
+    margin-top: 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff4100;
+    width: 100px;
+    height: 5px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);    
+}
+.best .row{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-around;
+    margin-top: 90px;
+    margin-left: 200px;
+}
+.best .row .col-3{
+    margin-right: 55px;
+}
+.offer{
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 50px;
+    padding:0;
+}
+.offer .btn{
+    margin: 20px 0;
+}
+.small-container .row{
+    justify-content: space-evenly;
+}
+.test{
+    padding-top: 100px;
+
+}
+.test .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0,0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.test .col-3 img{
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.test .col-3:hover{
+    transform: translateY(-10px);
+}
+.rating{
+    color: #fc6d40;
+}
+.fas.fa-quote-left{
+    font-size: 35px;
+    color: #fc6d40;
+}
+.col-3{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+.test .col-3 h3{
+    font-weight: 700;
+    color: #555;
+    padding: 10px;
+}
+.brands{
+    margin: 150px auto;
+}
+.brands .col-5{
+    width: 150px;
+    padding: 20px;
+}
+.brands .col-5 img{
+    width: 100%;
+    
+    filter:saturate(0%);
+}
+.brands .col-5 img:hover{
+    filter:saturate(100%);
+    transition: 0.5s;
+}
+.footer{
+    background: black;
+    color: #8a8a8a;
+    font-size: 15px;
+    padding: 60px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color:#fff;
+
+}
+.footercol1, .footercol2, .footercol3, .footercol4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footercol1{
+    flex-basis: 30%;
+}
+.footercol2{
+    flex: 1;
+    text-align: center;
+}
+.footercol2 img{
+    margin-bottom: 20px;
+}
+.footercol3, .footercol4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app{
+    margin-top: 20px;
+}
+.app img{
+    width: 140px;
+}
+.copy{
+    text-align: center;
+}
+.footer hr{
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.menu{
+    width: 28px;
+    display: none;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .brands .col-5 img{
+        width: 80%;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4, .col-5{
+        flex-basis: 100%;
+    }
+    .col-2 .offerimg{
+        margin-left:    0px;
+    }
+    .best .col-3{
+        margin-left: -110px;
+        margin-right: 50px;
+    }
+    .brands .col-5 img{
+        width: 30%;
+        padding: 10px;
+    }
+    .offer .col2 img{
+        max-width: 50%;
+    }
+}
